@@ -16,6 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <ColorSchemeScript />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
       </head>
       <body style={{
         backgroundColor:" #FBFBFF"
