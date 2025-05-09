@@ -9,7 +9,7 @@ interface Props {
 }
 
 const CreateJob: React.FC<Props> = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
+  
 
   const [formData, setFormData] = useState({
     jobTitle: "",
@@ -22,7 +22,7 @@ const CreateJob: React.FC<Props> = ({ isOpen, onClose }) => {
     jobDescription: "",
     imageUrl: ""
   });
-
+if (!isOpen) return null;
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
