@@ -1,6 +1,6 @@
 'use client';
 import CreateJob from './CreateJob';
-import Image from 'next/image';
+
 import Navbar from './Navbar';
 import {
   Box,
@@ -12,7 +12,6 @@ import {
 } from '@mantine/core';
 import {
   IconMapPin,
-  IconCurrencyRupee,
   IconChevronDown,
   IconSearch,
 } from '@tabler/icons-react';
