@@ -19,7 +19,6 @@ const Jobcard: React.FC<JobcardProps> = ({
   company,
   salary,
   experience,
-  location,
   description,
   logoUrl = "logo.svg",
   postedAgo = "24h Ago",

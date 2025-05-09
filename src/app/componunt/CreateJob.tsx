@@ -40,9 +40,11 @@ if (!isOpen) return null;
       onClose();
       window.location.reload();
 
-    } catch (error: any) {
-      alert(error.response?.data?.message || "Something went wrong");
-    }
+    } catch (error: unknown) {
+  const errMsg = error instanceof Error ? error.message : 'Something went wrong';
+  alert(errMsg);
+}
+
   };
 
   return (

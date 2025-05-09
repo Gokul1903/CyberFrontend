@@ -1,4 +1,3 @@
-import Navbar from "./componunt/Navbar";
 
 import JobList from "./componunt/JobList";
 import JobFilterHeader from "./componunt/JobFilterHeader";

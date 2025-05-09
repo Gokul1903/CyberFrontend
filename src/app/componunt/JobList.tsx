@@ -57,7 +57,7 @@ const JobList: React.FC = () => {
           alert("Failed to fetch jobs");
         }
       } catch (err) {
-        alert("Error fetching jobs");
+        alert("Error fetching jobs"+err);
       }
     };
 
