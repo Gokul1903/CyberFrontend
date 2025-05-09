@@ -1,0 +1,28 @@
+/* .create-job-modal {
+  width: 848px;
+  height: 779px;
+  top: 117px;
+  left: 296px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 24px 0px rgba(169, 169, 169, 0.25);
+} */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050; /* Higher than other content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+  backdrop-filter: blur(4px); /* Optional blur */
+}
+
+.create-job-modal {
+  width: 848px;
+  max-width: 95%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+}

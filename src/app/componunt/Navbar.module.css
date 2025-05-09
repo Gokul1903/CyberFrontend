@@ -1,0 +1,100 @@
+.navContainer {
+    box-sizing: border-box;
+    position: absolute;
+    width: 890px;
+    height: 80px;
+    left: calc(50% - 890px / 2);
+    top: 21px;
+    background: #FFFFFF;
+    border: 1px solid #FCFCFC;
+    box-shadow: 0px 0px 20px rgba(127, 127, 127, 0.15);
+    border-radius: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+
+.container {
+    width: 838px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.logo {
+    width: 44px;
+    height: 44.68px;
+    display: flex;
+    align-items: center;
+  }
+  
+
+.navItems {
+
+    display: flex;
+    justify-content: center; /* Center nav items */
+    align-items: center;
+    flex-grow: 1; /* Allows nav items to grow */
+    font-family: "Satoshi Variable", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 48px; /* Match height */
+    letter-spacing: 0%;
+    color: #4b5563;
+    gap: 15px; /* Control space between nav items */
+}
+
+.navItem {
+    display: flex; /* Ensure navItem is a flex container */
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Ensure it takes full height */
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.popup {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-width: 120px; /* Ensure all boxes have minimum width */
+    height: 48px;
+    padding: 10px 15px;
+    gap: 11.4px;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+}
+.createJobWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .createJobBtn {
+    background: linear-gradient(180deg, #a128ff 0%, #6100ad 113.79%);
+    width: 123px;
+    height: 38px;
+    border-radius: 30px;
+    padding: 8px 24px;
+    color: white;
+    font-family: "Satoshi Variable", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+ 
+  
+
+  .popup:hover {
+    box-shadow: 0px 8px 15px -3px rgba(127, 127, 127, 0.15);
+    transform: translateY(5px);
+  }
+  
