@@ -52,7 +52,7 @@ if (!isOpen) return null;
       <div className="modal-overlay">
         <div className="create-job-modal position-relative bg-white p-4 rounded-4 shadow-custom">
           
-          <h2 className="text-center fw-bold mb-4 text-dark">Create Job Opening</h2>
+          <h2 className="text-center fw-bold mb-4 text-dark" style={{fontSize:"24px",fontWeight:"700px"}}>Create Job Opening</h2>
           <div className="row g-4">
             <div className="col-md-6">
               <label className="form-label" style={{fontSize:"20px" ,fontWeight:"500"}}>Job Title</label>

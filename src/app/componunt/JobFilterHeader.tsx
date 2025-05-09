@@ -16,11 +16,24 @@ import {
   IconSearch,
 } from '@tabler/icons-react';
 import { IconUser } from '@tabler/icons-react';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 export default function JobFilterHeader() {
   const [salaryRange, setSalaryRange] = useState<[number, number]>([50000, 80000]);
   const [showModal, setShowModal] = useState(false);
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Clean up on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [showModal]);
+
   return (
     <Box w="100%" bg="#FFFFFF">
       <Navbar onCreateJobClick={() => setShowModal(true)}/>
