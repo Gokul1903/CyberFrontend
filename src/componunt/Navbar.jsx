@@ -4,7 +4,7 @@ import logo from "/logo.svg"; // Ensure the correct path
 import { Container, Row, Col } from 'react-bootstrap';
 import { IconMapPin, IconChevronDown, IconSearch, IconUser } from '@tabler/icons-react';
 import { RangeSlider } from '@mantine/core';
-import JobList from './Joblist';
+import JobList from './JobList';
 import CreateJob from './CreateJob';
 
 const Navbar = () => {
