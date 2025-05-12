@@ -34,6 +34,7 @@ const timeAgo = (dateString) => {
 const JobList = ({ searchQuery, location, jobType, salaryRange }) => {
   const [jobs, setJobs] = useState([]);
 const [filteredJobs, setFilteredJobs] = useState([]);
+const[isloading,setisloading]=useState(true);
 
     useEffect(() => {
   const filtered = jobs.filter((job) => {
@@ -66,6 +67,7 @@ const [filteredJobs, setFilteredJobs] = useState([]);
     const fetchJobs = async () => {
       try {
         const res = await axios.get(`${API_URL}/jobs/viewJob`);
+        setisloading(false);
         if (res.data.success) {
           setJobs(res.data.jobs);
         } else {
@@ -78,6 +80,18 @@ const [filteredJobs, setFilteredJobs] = useState([]);
 
     fetchJobs();
   }, []);
+
+  if(isloading){
+    return(
+      <div className="d-flex justify-content-center align-items-center" style={{height:"80vh"}}>
+        <div className="spinner-border " role="status">
+          <span className="visually-hidden"> Loading...</span>
+        </div>
+
+      </div>
+    )
+  }
+
   if(filteredJobs.length===0){
     return(
         <section className="py-5">
